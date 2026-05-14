@@ -22,13 +22,13 @@ function Header(props){ //nota... llamar a setActivado llama de nuevo a la funci
     }
 
     return(
-        <div id="menu" className={activado ? "omenu" : "menu"}> {/*Creamos un div que contenga al header.*/}
+        <div id="menu" className={activado ? "omenu" : "cmenu"}> {/*Creamos un div que contenga al header.*/}
             <img src={logo} alt="logo" className="logo" />
             <header> {/*Creamos el header. La etiqueta header no hace nada. Es lo mismo que el div pero es para diferenciar xd.*/}
                 <ul className="navegation">
-                    <li className="element"><a className={activado ? "olink" : "link"} href="/">inicio</a></li> {/* La etiqueta a hace referencia a un "ancla" y es la forma en la que se crean hiperinculos en la web.*/}
-                    <li className="element"><a className={activado ? "olink" : "link"} href="/cursos">cursos</a></li> {/*href significa Hypertext Reference*/}
-                    <li className="element"><a className={activado ? "olink" : "link"} href="/ejercicios">ejercicios</a></li> {/*el '#' te lleva a la etiqueta que contenga dicho id dentro de la pagina. Sin '#' busca en el internet.*/}
+                    <li className="element"><a className={activado ? "olink" : "clink"} href="/">inicio</a></li> {/* La etiqueta a hace referencia a un "ancla" y es la forma en la que se crean hiperinculos en la web.*/}
+                    <li className="element"><a className={activado ? "olink" : "clink"} href="/cursos">cursos</a></li> {/*href significa Hypertext Reference*/}
+                    <li className="element"><a className={activado ? "olink" : "clink"} href="/ejercicios">ejercicios</a></li> {/*el '#' te lleva a la etiqueta que contenga dicho id dentro de la pagina. Sin '#' busca en el internet.*/}
                     <li><button className={activado ? "btn-dinamico" : "btn-activo"} onClick={modo}> {activado ? "Modo claro" : "Modo oscuro"} </button></li> {/*Boton con condicional de linea.*/}
                 </ul>
             </header>

@@ -1,3 +1,5 @@
+
+
 .btn-dinamico {
   background-color: #282c34;
   color: white;
@@ -18,6 +20,7 @@
   transition: 0.3s;
   cursor: pointer;
 }
+
 .navegation{
     width: 100%;
     list-style: none;
@@ -26,11 +29,10 @@
     column-gap: 25px;
 }
 
-.menu{
+#menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: solid 1px;
     padding: 10px;
     transition: 0.3s;
 }
@@ -46,17 +48,16 @@ body{
     margin: 0;
     padding: 0;
 }
+/*----------------------MODO CLARO-----------------*/
+
+.cmenu{
+    border: 0;
+}
 
 /*----------------------MODO OSCURO-----------------*/
 
 .omenu{
     background-color: #282c34;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: solid 1px;
-    padding: 10px;
-    transition: 0.3s;
 }
 
 .olink{
