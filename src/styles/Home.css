@@ -1,0 +1,52 @@
+.home{
+    height: 700px;
+    transition: 0.3s;
+}
+
+.bannercss{
+    background-color: antiquewhite;
+}
+
+#banner{
+    display: flex;
+    flex-direction: row;
+    border: solid white 4px;
+    height: 500px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#Welcome{
+    border: seagreen solid 3px;
+    width: 50%;
+}
+
+#panel_sesion{
+    border: royalblue solid 3px;
+    width: 50%;
+}
+
+/*Modo Claro*/
+
+.chome{
+    background-color: whitesmoke;
+}
+
+.cbannercss{
+    background: #020024;
+    background: linear-gradient(50deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 28%, rgba(5, 93, 176, 1) 65%, rgba(0, 212, 255, 1) 100%);
+}
+
+/*MODO OSCURO*/
+
+.ohome{
+    background-color: #202940;
+}
+
+.obannercss{
+    /*background: #1B004B;
+    background: linear-gradient(67deg,rgba(27, 0, 75, 1) 0%, rgba(161, 48, 184, 1) 42%, rgba(127, 0, 178, 1) 77%, rgba(76, 0, 125, 1) 100%);
+    */
+    background: #00D4FF;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(71, 133, 255, 1) 10%, rgba(90, 94, 214, 1) 51%, rgba(82, 139, 255, 1) 91%, rgba(0, 212, 255, 1) 100%);
+}
