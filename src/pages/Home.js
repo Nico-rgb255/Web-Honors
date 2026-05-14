@@ -23,7 +23,7 @@ function Home(){
         {/*Banner*/}
         <div id="banner" className={actual_state ? "obannercss" : "cbannercss"}>
             <div id="Welcome" className="info_text">
-                <div></div>
+                <div id="WBox"><h2>Bienvenido!</h2></div>
             </div>
             <div id="panel_sesion" className={actual_state ? "oiniciar" : "iniciar"}>
                 <p>Este debe ser el panel de inicio de sesión</p>

@@ -26,6 +26,17 @@
     width: 50%;
 }
 
+#WBox{
+    height: 50px;
+    box-shadow: 5px 5px 5px black;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    color: rgba(255, 255, 255, 0.893);
+    border-radius: 15px;
+}
+
 /*Modo Claro*/
 
 .chome{
@@ -67,3 +78,5 @@
     background: linear-gradient(135deg, #312c00 0.000%, #312c00 14.286%, #332e1e calc(14.286% + 1px), #332e1e 28.571%, #323149 calc(28.571% + 1px), #323149 42.857%, #2c3377 calc(42.857% + 1px), #2c3377 57.143%, #2436a2 calc(57.143% + 1px), #2436a2 71.429%, #1a39c0 calc(71.429% + 1px), #1a39c0 85.714%, #113ccc calc(85.714% + 1px) 100.000%);
     transition: 0.5s;
 }
+
+/*NOTA: Gradientes extraidos de la siguiente pagina:https://cssgradient.io/gradient-backgrounds/ ESTAN BUENISIMOS XDXDX*/
