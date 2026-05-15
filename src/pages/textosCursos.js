@@ -1,20 +1,24 @@
-// textosCursos.js
+// textosCursos esto se muestra cuando pones el ver mas en cada curso, es el texto largo que se muestra en cada curso, lo puse en otro archivo para que no se vea tan feo el codigo de cursos.js
 
 export const textoFisicaLong = `
-    <b>Física II: Fundamentos de Termodinámica y Fenómenos Ondulatorios</b><br /><br />
+    <b>Termodinámica Clásica: Fundamentos de Energía y Sistemas Térmicos</b><br /><br />
     
-    El presente curso constituye una piedra angular en la formación básica de ingeniería, proporcionando las herramientas analíticas necesarias para comprender la interacción entre la energía y la materia desde una perspectiva macroscópica. Se aborda de manera rigurosa el estudio de los sistemas térmicos y la propagación de perturbaciones en medios elásticos.<br /><br />
+    Esta asignatura constituye un pilar analítico fundamental en la formación en ingeniería civil, proporcionando los principios y leyes físicas que gobiernan las transformaciones de la energía, la transferencia de calor y la realización de trabajo mecánico. El curso capacita al estudiante para evaluar de manera cuantitativa la eficiencia, viabilidad y optimización de procesos físicos en sistemas macroscópicos.<br /><br />
     
-    <b>Descripción Detallada del Programa:</b><br />
-    La asignatura se divide en tres bloques temáticos fundamentales diseñados para desarrollar el pensamiento crítico y la capacidad de modelamiento físico:<br />
+    <b>Ejes Programáticos y Unidades de Estudio:</b><br />
+    La materia se estructura de forma progresiva en los siguientes bloques de conocimiento teórico-práctico:<br />
     <ul>
-        <li><b>Termodinámica Clásica:</b> Análisis de las leyes que rigen el intercambio calórico y el trabajo mecánico. Se profundiza en el estudio de sustancias puras, ciclos de potencia y la Segunda Ley, introduciendo la entropía como una propiedad fundamental de los sistemas.</li>
-        <li><b>Mecánica de Oscilaciones:</b> Estudio de sistemas dinámicos bajo fuerzas de restitución. Se analizan oscilaciones libres, amortiguadas y forzadas, con especial énfasis en el fenómeno de resonancia.</li>
-        <li><b>Teoría de Ondas:</b> Modelamiento matemático de ondas longitudinales y transversales. Se examinan propiedades como la interferencia, difracción y el efecto Doppler, fundamentales para la ingeniería acústica y estructural.</li>
+        <li><b>Conceptos Fundamentales y Ley Cero:</b> Definición rigurosa de sistemas termodinámicos (abiertos, cerrados y aislados), propiedades intensivas y extensivas, estado de equilibrio térmico y el principio fundamental que permite la medición científica de la temperatura.</li>
+        <li><b>Primera Ley de la Termodinámica:</b> Aplicación del principio de conservación de la energía a sistemas tanto estáticos como de flujo másico continuo (volúmenes de control). Se profundiza en el cálculo de trabajo de frontera, energía interna, entalpía y calor en gases ideales y sustancias puras utilizando tablas de propiedades.</li>
+        <li><b>Segunda Ley y Entropía:</b> Estudio de las restricciones naturales en la dirección de los procesos térmicos y la degradación de la energía. Se analizan los teoremas de Carnot, el rendimiento de máquinas térmicas, coeficientes de desempeño en refrigeración y se introduce la entropía como medida de la irreversibilidad.</li>
+        <li><b>Ciclos de Potencia de Gas y Vapor:</b> Modelamiento, análisis termodinámico y cálculo de eficiencia en sistemas reales de ingeniería, incluyendo el Ciclo de Rankine (centrales termoeléctricas), Ciclo de Brayton (turbinas de gas), Ciclo Otto y Ciclo Diesel.</li>
     </ul>
     <br />
-    <b>Objetivos de Aprendizaje:</b><br />
-    Al finalizar el periodo, el estudiante será capaz de aplicar los principios de conservación de la energía a problemas complejos de ingeniería y modelar matemáticamente fenómenos periódicos con precisión técnica. Se requiere un manejo fluido de cálculo integral para el éxito en las evaluaciones.
+    <b>Competencias y Exigencia Académica:</b><br />
+    El correcto desarrollo de esta asignatura demanda un manejo fluido de herramientas de cálculo multivariable y álgebra. El estudiante deberá desarrollar una estricta metodología de resolución de problemas, fundamentada en la delimitación precisa de las fronteras del sistema, la identificación de los estados de equilibrio inicial/final y el uso correcto de diagramas de propiedades (Presión-Volumen, Temperatura-Entropía).<br /><br />
+    
+    <b>Impacto en el Ejercicio Profesional de la Ingeniería:</b><br />
+    El dominio de la termodinámica es esencial para el diseño de sistemas de eficiencia energética, la optimización de procesos de conversión de recursos, el análisis de sistemas de climatización industrial y la comprensión del comportamiento térmico de materiales estructurales. La falta de rigurosidad en los balances de masa y energía de un proyecto puede derivar en fallas operativas críticas, pérdidas económicas severas y comprometer la seguridad de infraestructuras a gran escala.
 `;
 
 export const textoCalculoLong = `
