@@ -13,6 +13,12 @@ function Ejercicios() {
         { id: 4, ramo: 'Ecuaciones Diferenciales', enunciado: 'este es un enunciado de prueba 4', solucion: 'xd 4', temario: 'cosas de las q trata' },
     ];
 
+    const [filtro, setFiltro] = useState("No-filtro");
+
+    const ejerciciosfiltrados = filtro === "No-filtro"
+        ? lista_ejercicios
+        : lista_ejercicios.filter(ej => ej.ramo === filtro);
+
     return (
         <>
             <Header update={setActivado} state={actual_state} />
@@ -20,7 +26,14 @@ function Ejercicios() {
                 <h1>Ejercicios</h1>
             </div>
 
-            {lista_ejercicios.map((ej) => (
+            <div style={boton}>
+                <button onClick={() => setFiltro("No-filtro")}>No Filtrar</button>
+                <button onClick={() => setFiltro("Cálculo III")}>Cálculo III</button>
+                <button onClick={() => setFiltro("Termodinámica")}>Termodinámica</button>
+                <button onClick={() => setFiltro("Ecuaciones Diferenciales")}>Ecuaciones Diferenciales</button>
+            </div>
+
+            {ejerciciosfiltrados.map((ej) => ( //{lista_ejercicios.filter(ej => ej.ramo == 'Cálculo III').map((ej) => (
                 <div key={ej.id} style={contenedor_ejercicios}>
                     <h2>{ej.ramo}</h2>
                     <p style={temario}>{ej.enunciado}</p>
@@ -62,5 +75,12 @@ const temario = {
     border: '2px solid #333',
     margin: '10px'
 }
+
+const boton = {
+    display: 'flex',
+    gap: '10px',
+    marginBottom: '20px',
+    justifyContent: 'center'
+};
 
 export default Ejercicios;
