@@ -19,6 +19,9 @@
 #Welcome{
     border: seagreen solid 3px;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #panel_sesion{
@@ -27,7 +30,7 @@
 }
 
 #WBox{
-    height: 50px;
+    width: 70%;
     box-shadow: 5px 5px 5px black;
     background: linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(10px);
@@ -35,6 +38,7 @@
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     color: rgba(255, 255, 255, 0.893);
     border-radius: 15px;
+    padding: 15px;
 }
 
 /*Modo Claro*/
