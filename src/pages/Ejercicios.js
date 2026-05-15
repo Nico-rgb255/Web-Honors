@@ -9,7 +9,9 @@ function Ejercicios() {
     const [actual_state, setActivado] = useState(GetLocalStorage());
 
     // BOTON DINAMICO
-    const [botonDinamico, setbotonDinamico] = useState(false);
+    const [botonDinamico1, setbotonDinamico1] = useState(false);
+    // BOTON DINAMICO 2
+    const [botonDinamico2, setbotonDinamico2] = useState(false);
 
     // LISTA EJERCICIOS
     const lista_ejercicios = [
@@ -35,12 +37,12 @@ function Ejercicios() {
             </div>
 
             <div style={boton_contenedor}>
-                <button 
-                onClick={() => {setFiltro("No-filtro"); setbotonDinamico(!botonDinamico);}} 
-                className={botonDinamico ? 'boton-activado' : 'boton-desactivado'}
+                <button
+                    onClick={() => { setFiltro("No-filtro"); setbotonDinamico1(!botonDinamico1); }}
+                    className={botonDinamico1 ? 'boton-activado' : 'boton-desactivado'}
                 >No Filtrar</button>
-                <button onClick={() => {setFiltro("Cálculo III")}}
-                    >Cálculo III</button>
+                <button onClick={() => { setFiltro("Cálculo III"); setbotonDinamico2(!botonDinamico2); }}
+                >Cálculo III</button>
                 <button onClick={() => setFiltro("Termodinámica")}>Termodinámica</button>
                 <button onClick={() => setFiltro("Ecuaciones Diferenciales")}>Ecuaciones Diferenciales</button>
             </div>
