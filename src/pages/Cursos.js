@@ -8,7 +8,7 @@ import '../styles/cursos.css'
 
 
 function Cursos() {
-    const [actual_state, setActivado] = useState(true);
+    const [actual_state, setActivado] = useState(GetLocalStorage());
     // Ahora el estado guarda el OBJETO del curso, no solo el nombre
     const [cursoSeleccionado, setCursoSeleccionado] = useState(null);
 

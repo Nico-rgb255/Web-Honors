@@ -32,7 +32,10 @@ function Home(){
                 
             </div>
             <div id="panel_sesion">
-                <p>Este debe ser el panel de inicio de sesión</p>
+                <div id="sesion_box" className="glass">
+                    <h2>Iniciar sesión</h2>
+                    <p>Inicia sesión acá</p>
+                </div>
             </div>
         </div>
 
