@@ -1,0 +1,20 @@
+.titulo-moderado {
+  /* Tamaño ideal: ni muy grande ni muy chico */
+  font-size: 1.5rem; 
+  /* Negrita bien marcada */
+  font-weight: 700; 
+  /* Un color oscuro suave para que se vea más elegante que el negro puro */
+  color: #2d3748; 
+  /* Ajuste de línea para que si se corta, no quede tan separado */
+  line-height: 1.3; 
+  /* Un pequeño margen abajo para separarlo del texto siguiente */
+  margin-bottom: 0.75rem; 
+}
+
+.texto-normal {
+  font-size: 1rem;       /* Tamaño estándar y cómodo para lectura (16px) */
+  font-weight: 400;     /* Peso normal o regular */
+  line-height: 1.6;     /* Espaciado de línea ideal para bloques de texto */
+  color: #4a5568;       /* Gris oscuro, cansa mucho menos la vista que el negro puro */
+  margin-bottom: 1rem;  /* Separación limpia entre párrafos */
+}
