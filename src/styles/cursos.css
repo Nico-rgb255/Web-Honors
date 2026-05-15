@@ -1,31 +1,40 @@
+/*Modo Claro*/
+:root {
+    --bg-color: #ffffff;
+    --text-primary: #005eff;
+    --text-secondary: #4a5568;
+    --accent-color: #2b6cb0; /* Un azul para botones */
+}
+/*Modo Oscuro*/
+.dark-mode {
+    --bg-color: #1a202c;
+    --text-primary: #ff0000;
+    --text-secondary: #cbd5e0;
+    --accent-color: #63b3ed;
+}
+.detalle-curso {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--bg-color); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
 .titulo-moderado {
-  /* Tamaño ideal: ni muy grande ni muy chico */
-  font-size: 1.5rem; 
-  /* Negrita bien marcada */
-  font-weight: 700; 
-  /* Un color oscuro suave para que se vea más elegante que el negro puro */
-  color: #2d3748; 
-  /* Ajuste de línea para que si se corta, no quede tan separado */
-  line-height: 1.3; 
-  /* Un pequeño margen abajo para separarlo del texto siguiente */
-  margin-bottom: 0.75rem; 
-  text-align: center;
+    font-size: 2rem; 
+    font-weight: 700; 
+    color: var(--text-primary); 
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .texto-normal {
-  font-size: 1rem;       /* Tamaño estándar y cómodo para lectura (16px) */
-  font-weight: 400;     /* Peso normal o regular */
-  line-height: 1.6;     /* Espaciado de línea ideal para bloques de texto */
-  color: #4a5568;       /* Gris oscuro, cansa mucho menos la vista que el negro puro */
-  margin-bottom: 1rem;  /* Separación limpia entre párrafos */
-  text-align: justify; /* En textos largos y formales, el justify se ve más serio */
-hyphens: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-secondary); 
+    text-align: justify;
 }
 
-.detalle-curso {
-    max-width: 800px;    /* Evita que el texto se estire demasiado en pantallas grandes */
-    margin: 0 auto;      /* Centra el contenedor horizontalmente */
-    padding: 2rem;       /* Espacio interno para que no toque los bordes en celulares */
-    background-color: #ffffff;
-    line-height: 1.8;    /* Aumenta un poco el espacio entre líneas para formalidad */
+.texto-normal b, .texto-normal strong {
+    color: var(--text-primary);
 }

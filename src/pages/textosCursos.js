@@ -33,22 +33,22 @@ export const textoCalculoLong = `
     El estudiante desarrollará la capacidad de visualizar y resolver problemas geométricos y físicos en tres dimensiones, habilidad indispensable para el diseño estructural, la hidráulica y la electromecánica. La rigurosidad en la definición de dominios de integración es vital para evitar errores conceptuales de alto impacto.
 `;
 
-export const textoProgramacionIntro = `
-    <b>Introducción a la Programación: Algoritmos y Resolución de Problemas</b><br /><br />
+export const textoEcuacionesdiferenciales = `
+    <b>Ecuaciones Diferenciales: Modelamiento de Sistemas Dinámicos</b><br /><br />
     
-    Esta asignatura representa el primer contacto formal del estudiante con el pensamiento computacional. Más allá del aprendizaje de un lenguaje específico, el curso se centra en el desarrollo de la capacidad lógica para descomponer problemas complejos en pasos sistemáticos y ejecutables por una unidad de procesamiento.<br /><br />
+    Esta asignatura constituye el pilar fundamental para el análisis de sistemas que evolucionan en el tiempo. El curso se enfoca en el estudio de ecuaciones que involucran funciones incógnitas y sus derivadas, proporcionando el lenguaje matemático necesario para describir fenómenos en física, química, economía y diversas ramas de la ingeniería estructural y mecánica.<br /><br />
     
-    <b>Estructura Programática:</b><br />
+    <b>Unidades Temáticas Principales:</b><br />
     <ul>
-        <li><b>Fundamentos de Algoritmia:</b> Introducción a la lógica de programación, diagramas de flujo y pseudocódigo. Se enfatiza la importancia de la eficiencia algorítmica y la estructura secuencial.</li>
-        <li><b>Estructuras de Control y Datos:</b> Estudio profundo de bifurcaciones condicionales y ciclos iterativos. Se analizan estructuras de datos fundamentales como arreglos (arrays), listas, diccionarios y su manipulación en memoria.</li>
-        <li><b>Modularización y Abstracción:</b> Diseño de funciones y procedimientos para fomentar la reutilización de código. Se introducen conceptos de recursividad y el manejo de ámbitos (scope) de variables.</li>
-        <li><b>Paradigma de Programación:</b> Introducción a los conceptos básicos de la Programación Orientada a Objetos (POO), incluyendo clases, objetos y encapsulamiento.</li>
+        <li><b>Ecuaciones de Primer Orden:</b> Estudio de métodos de resolución para ecuaciones lineales y no lineales, incluyendo variables separables, ecuaciones exactas y el factor integrante. Se analizan aplicaciones en modelos de crecimiento poblacional y enfriamiento de Newton.</li>
+        <li><b>Ecuaciones de Orden Superior:</b> Análisis de ecuaciones lineales con coeficientes constantes. Se profundiza en el uso del Wronskiano para verificar la independencia lineal de las soluciones y el método de coeficientes indeterminados.</li>
+        <li><b>Transformada de Laplace:</b> Introducción de operadores integrales para transformar ecuaciones diferenciales en problemas algebraicos, facilitando la resolución de sistemas con funciones discontinuas o impulsos unitarios (Delta de Dirac).</li>
+        <li><b>Sistemas de Ecuaciones Diferenciales:</b> Modelamiento de múltiples variables interconectadas mediante el uso de valores y vectores propios (eigenvalues), fundamental para el análisis de vibraciones y circuitos complejos.</li>
     </ul>
     <br />
-    <b>Metodología de Trabajo:</b><br />
-    El curso combina la teoría con la implementación práctica en lenguajes de alto nivel como Python. El rigor en la sintaxis y la capacidad de depuración (debugging) son competencias críticas que se evalúan de manera constante. <br /><br />
+    <b>Metodología y Exigencia:</b><br />
+    El curso demanda una base sólida en cálculo integral y álgebra lineal. La capacidad de abstracción es crítica, dado que no solo se busca obtener una solución matemática, sino también interpretar el comportamiento asintótico y la estabilidad de los sistemas modelados.<br /><br />
     
-    <b>Importancia en la Ingeniería:</b><br />
-    En el contexto actual, la programación no es solo una herramienta técnica, sino un lenguaje universal para el modelamiento de sistemas estructurales, hidráulicos y económicos. La omisión de buenas prácticas de documentación y orden lógico puede resultar en fallas sistémicas de alta complejidad técnica.
+    <b>Impacto en la Formación Profesional:</b><br />
+    Para un ingeniero civil, las ecuaciones diferenciales permiten predecir el comportamiento de estructuras bajo cargas variables, el flujo de fluidos en tuberías y la respuesta sísmica de edificaciones. La falta de precisión en el planteamiento de las condiciones iniciales o de borde puede derivar en interpretaciones erróneas de la realidad física del proyecto.
 `;
