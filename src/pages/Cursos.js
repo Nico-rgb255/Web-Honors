@@ -15,30 +15,36 @@ function Cursos() {
     const misCursos = [
         { id: 1, nombre: "Dinamica", desc: "¿De que trata la fisica?", contenido: textoFisicaLong },
         { id: 2, nombre: "Cálculo III", desc: "Integrales derivadas y más", contenido: textoCalculoLong },
-        { id: 3, nombre: "Ecuaciones diferenciales", desc: "Python para todos", contenido: textoEcuacionesdiferenciales }
+        { id: 3, nombre: "Ecuaciones diferenciales", desc: "Como crece una poblacion como cambian las cosas", contenido: textoEcuacionesdiferenciales }
     ];
 
     // SI HAY ALGO SELECCIONADO MOSTRAR 
-    if (cursoSeleccionado) {
-        return (
-            <>
-                <Header update={setActivado} state={actual_state}/>
-    <div className="detalle-curso">
-        <h1 className="titulo-moderado">{cursoSeleccionado.nombre}</h1> 
-        <p className="texto-normal"><strong>Descripción:</strong> {cursoSeleccionado.desc}</p>
-    
-        <div 
-            className="contenido texto-normal" 
-            // Esto es para que la wea sepa que el texto de textos cursos es html
-            dangerouslySetInnerHTML={{ __html: cursoSeleccionado.contenido }} 
-        />
-    
-    <hr />
-    <button onClick={() => setCursoSeleccionado(null)}>Volver a la lista</button>
-</div>
-            </>
-        );
-    }
+if (cursoSeleccionado) {
+    return (
+        <div className={actual_state ? "oej" : "cej"}>
+            <Header update={setActivado} state={actual_state}/>
+            
+            <div className="detalle-curso">
+                <h1 className="titulo-moderado" style={{ paddingTop: '20px' }}>
+                    {cursoSeleccionado.nombre}
+                </h1> 
+                
+                <p className="texto-normal">
+                    <strong>Descripción:</strong> {cursoSeleccionado.desc}
+                </p>
+                
+                {/* PASO CLAVE: Aquí le pones la clase nueva */}
+                <div 
+                    className="texto-largo" 
+                    dangerouslySetInnerHTML={{ __html: cursoSeleccionado.contenido }} 
+                />
+                
+                <hr />
+                <button onClick={() => setCursoSeleccionado(null)}>Volver a la lista</button>
+            </div>
+        </div>
+    );
+}
 
 return (
     <div className={actual_state ? "oej" : "cej"}>

@@ -1,17 +1,25 @@
-/*Modo Claro*/
-:root {
+/*MODO CLARO (.cej)*/
+.cej {
     --bg-color: #ffffff;
-    --text-primary: #005eff;
+    --bg-tarjeta: #ffffff;
+    --border-tarjeta: #ccc;
+    --text-primary: #1e211e;
     --text-secondary: #4a5568;
-    --accent-color: #2b6cb0; /* Un azul para botones */
+    --accent-color: #2b6cb0;
+    --color-link: #0070f3;
 }
-/*Modo Oscuro*/
-.dark-mode {
+
+/*MODO OSCURO (.oej)*/
+.oej {
     --bg-color: #1a202c;
-    --text-primary: #ff0000;
+    --bg-tarjeta: #2d3748; /* Gris sutilmente más claro que el fondo */
+    --border-tarjeta: #4a5568;
+    --text-primary: #cfcfcf;
     --text-secondary: #cbd5e0;
     --accent-color: #63b3ed;
+    --color-link: #63b3ed;
 }
+
 .detalle-curso {
     max-width: 800px;
     margin: 0 auto;
@@ -39,26 +47,6 @@
     color: var(--text-primary);
 }
 
-/* Agrega estas nuevas variables a tus temas existentes */
-.oej {
-    --bg-color: #ffffff;
-    --bg-tarjeta: #ffffff;
-    --border-tarjeta: #ccc;
-    --text-primary: #2d3748;
-    --text-secondary: #4a5568;
-    --color-link: #0070f3;
-}
-
-.cej {
-    --bg-color: #1a202c;
-    --bg-tarjeta: #2d3748; /* Un gris un poco más claro que el fondo para que resalte */
-    --border-tarjeta: #4a5568;
-    --text-primary: #edf2f7;
-    --text-secondary: #cbd5e0;
-    --color-link: #63b3ed; /* Un azul más claro para que resalte en la oscuridad */
-}
-
-/* Estilos de la Tarjeta */
 .tarjeta-curso-individual {
     border: 1px solid var(--border-tarjeta);
     border-radius: 8px;
@@ -80,7 +68,6 @@
     font-weight: 700;
 }
 
-/* Estilos del Botón de la Tarjeta */
 .btn-tarjeta {
     cursor: pointer;
     padding: 8px 12px;
@@ -96,4 +83,17 @@
 .tarjeta-curso-individual:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*ESTILOS de cuando se abren los cursos*/
+.texto-largo {
+    color: var(--text-primary);
+    background-color: var(--bg-color);
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.texto-largo li {
+    color: var(--text-secondary);
 }
