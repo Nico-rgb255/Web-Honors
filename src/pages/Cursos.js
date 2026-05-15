@@ -3,7 +3,9 @@ import Header from "../components/Header";
 import GetLocalStorage from "../LocalStorage/Get";
 import { useState } from "react";
 import CardCurso from "../components/CardCurso"; // <-- IMPORTANTE IMPORTANTE IMPORTAR EL COMPONENTE PARA USARLO
-import { textoFisicaLong, textoCalculoLong } from "./textosCursos";
+import { textoFisicaLong, textoCalculoLong, textoProgramacionIntro } from "./textosCursos";
+import '../styles/cursos.css'
+
 
 function Cursos() {
     const [actual_state, setActivado] = useState(true);
@@ -13,7 +15,7 @@ function Cursos() {
     const misCursos = [
         { id: 1, nombre: "Física II", desc: "Ondas y Calor", contenido: textoFisicaLong },
         { id: 2, nombre: "Cálculo III", desc: "Integrales", contenido: textoCalculoLong },
-        { id: 3, nombre: "Programación", desc: "Python", contenido: "Listas y Diccionarios..." }
+        { id: 3, nombre: "Programación", desc: "Python", contenido: textoProgramacionIntro }
     ];
 
     // SI HAY ALGO SELECCIONADO, MOSTRAR EL DETALLE GENÉRICO

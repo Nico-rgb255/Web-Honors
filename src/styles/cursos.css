@@ -9,6 +9,7 @@
   line-height: 1.3; 
   /* Un pequeño margen abajo para separarlo del texto siguiente */
   margin-bottom: 0.75rem; 
+  text-align: center;
 }
 
 .texto-normal {
@@ -17,4 +18,14 @@
   line-height: 1.6;     /* Espaciado de línea ideal para bloques de texto */
   color: #4a5568;       /* Gris oscuro, cansa mucho menos la vista que el negro puro */
   margin-bottom: 1rem;  /* Separación limpia entre párrafos */
+  text-align: justify; /* En textos largos y formales, el justify se ve más serio */
+hyphens: auto;
+}
+
+.detalle-curso {
+    max-width: 800px;    /* Evita que el texto se estire demasiado en pantallas grandes */
+    margin: 0 auto;      /* Centra el contenedor horizontalmente */
+    padding: 2rem;       /* Espacio interno para que no toque los bordes en celulares */
+    background-color: #ffffff;
+    line-height: 1.8;    /* Aumenta un poco el espacio entre líneas para formalidad */
 }
