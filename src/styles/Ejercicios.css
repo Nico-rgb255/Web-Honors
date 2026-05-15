@@ -23,23 +23,39 @@
     min-height: 100vh;
 }
 
+/*
+
+LOGICA ANTIGUA DEL BOTON
+
 .boton-activado {
   background-color: #1919e6;
   color: white;
-  height: 25px;
-  width: 100px;
+  height: 50px;
+  width: 150px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
+  */ 
+
+.boton-desactivado:active {
+  background-color: #1919e6;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+  transform: scale(0.95)
+}
 
 .boton-desactivado {
-  height: 25px;
-  width: 100px;
+  height: 50px;
+  width: 150px;
   background-color: #feffe0;
   border: solid 1px;
   border-radius: 5px;
   color: #282c34;
-  transition: 0.3s;
+  transition: 0.1s;
   cursor: pointer;
 }
