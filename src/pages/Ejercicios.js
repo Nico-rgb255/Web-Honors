@@ -18,7 +18,7 @@ function Ejercicios() {
     // VARIABLE DE FILTROS
     const [filtro, setFiltro] = useState("No-filtro");
 
-    // FILTRAJE DE EJERCICIOS
+    // FILTRAJE DE EJERCICIOS -w-b
     const ejerciciosfiltrados = filtro === "No-filtro"
         ? lista_ejercicios
         : lista_ejercicios.filter(ej => ej.ramo === filtro);
