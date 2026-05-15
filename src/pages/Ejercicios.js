@@ -4,6 +4,10 @@ import GetLocalStorage from "../LocalStorage/Get";
 import { useState } from "react";
 import '../styles/Ejercicios.css'
 
+import C31E from '../imagenes/C3 1E.png'
+import C31S from '../imagenes/C3 1S.png'
+
+
 function Ejercicios() {
     // MODO OSCURO
     const [actual_state, setActivado] = useState(GetLocalStorage());
@@ -25,10 +29,16 @@ function Ejercicios() {
 
     // LISTA EJERCICIOS
     const lista_ejercicios = [
-        { id: 1, ramo: 'Cálculo III', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+        { id: 1, ramo: 'Cálculo III', enunciado: <img src={C31E} alt="C3 1E" />, solucion: <img src={C31S} alt="C3 1S" />, temario: 'Torsión y Curvatura' },
         { id: 2, ramo: 'Cálculo III', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
-        { id: 3, ramo: 'Termodinámica', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+        { id: 3, ramo: 'Cálculo III', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
         { id: 4, ramo: 'Ecuaciones Diferenciales', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+        { id: 5, ramo: 'Ecuaciones Diferenciales', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+        { id: 6, ramo: 'Ecuaciones Diferenciales', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+        { id: 7, ramo: 'Termodinámica', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+        { id: 8, ramo: 'Termodinámica', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+        { id: 9, ramo: 'Termodinámica', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+
     ];
 
     // VARIABLE DE FILTROS
@@ -66,8 +76,10 @@ function Ejercicios() {
                 <div key={ej.id} style={contenedor_ejercicios}>
                     <h2>{ej.ramo}</h2>
                     <p style={temario}>{ej.temario}</p>
-                    <p>{ej.enunciado}</p>
-                    <p>{ej.solucion}</p>
+                    <p style={enunciado}>Enunciado
+                        {ej.enunciado}</p>
+                    <p style={enunciado}>Solución
+                        {ej.solucion}</p>
                 </div>
             ))}
         </div>
@@ -102,6 +114,16 @@ const temario = {
     borderRadius: '15px',
     gap: '10px',
     border: '2px solid',
+    margin: '10px'
+}
+
+const enunciado = {
+    display: 'flex',
+    fontSize: '20px',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '20px',
+    gap: '10px',
     margin: '10px'
 }
 
