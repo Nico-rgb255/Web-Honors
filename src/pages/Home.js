@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import GetLocalStorage from "../LocalStorage/Get";
 import { useState } from "react";
 import '../styles/Home.css'
+import '../styles/Efects.css'
 
 function Home(){
     const [actual_state, setActivado] =useState(GetLocalStorage());
@@ -23,14 +24,14 @@ function Home(){
         {/*Banner*/}
         <div id="banner" className={actual_state ? "obannercss" : "cbannercss"}>
             <div id="Welcome" className="info_text">
-                <div id="WBox">
+                <div id="WBox" className="glass">
                     <h2>¡Bienvenido!</h2>
                     <p>Bienvenido a nuestra pagina web. En este sitio podrás mejorar todas las áreas de conocimiento que desees.</p>
                 </div>
                 
                 
             </div>
-            <div id="panel_sesion" className={actual_state ? "oiniciar" : "iniciar"}>
+            <div id="panel_sesion">
                 <p>Este debe ser el panel de inicio de sesión</p>
             </div>
         </div>
