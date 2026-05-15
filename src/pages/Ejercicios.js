@@ -9,6 +9,8 @@ function Ejercicios() {
     const lista_ejercicios = [
         { id: 1, ramo: 'Cálculo III', enunciado: 'este es un enunciado de prueba', solucion: 'xd', temario: 'cosas de las q trata' },
         { id: 2, ramo: 'Cálculo III', enunciado: 'este es un enunciado de prueba 2', solucion: 'xd 2', temario: 'cosas de las q trata' },
+        { id: 3, ramo: 'Termodinámica', enunciado: 'este es un enunciado de prueba 3', solucion: 'xd 3', temario: 'cosas de las q trata' },
+        { id: 4, ramo: 'Ecuaciones Diferenciales', enunciado: 'este es un enunciado de prueba 4', solucion: 'xd 4', temario: 'cosas de las q trata' },
     ];
 
     return (
@@ -21,7 +23,7 @@ function Ejercicios() {
             {lista_ejercicios.map((ej) => (
                 <div key={ej.id} style={contenedor_ejercicios}>
                     <h2>{ej.ramo}</h2>
-                    <p style={temario}>{ej.temario}</p>
+                    <p style={temario}>{ej.enunciado}</p>
                     <p>{ej.enunciado}</p>
                     <p>{ej.solucion}</p>
                 </div>
