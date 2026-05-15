@@ -6,7 +6,17 @@ import '../styles/Ejercicios.css'
 
 import C31E from '../imagenes/C3 1E.png'
 import C31S from '../imagenes/C3 1S.png'
+import C32E from '../imagenes/C3 2E.png'
+import C32S from '../imagenes/C3 2S.png'
+import C33E from '../imagenes/C3 3E.png'
+import C33S from '../imagenes/C3 3S.png'
 
+import EDO1E from '../imagenes/EDO 1E.png'
+import EDO1S from '../imagenes/EDO 1S.png'
+import EDO2E from '../imagenes/EDO 2E.png'
+import EDO2S from '../imagenes/EDO 2S.png'
+import EDO3E from '../imagenes/EDO 3E.png'
+import EDO3S from '../imagenes/EDO 3S.png'
 
 function Ejercicios() {
     // MODO OSCURO
@@ -30,11 +40,11 @@ function Ejercicios() {
     // LISTA EJERCICIOS
     const lista_ejercicios = [
         { id: 1, ramo: 'Cálculo III', enunciado: <img src={C31E} alt="C3 1E" />, solucion: <img src={C31S} alt="C3 1S" />, temario: 'Torsión y Curvatura' },
-        { id: 2, ramo: 'Cálculo III', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
-        { id: 3, ramo: 'Cálculo III', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
-        { id: 4, ramo: 'Ecuaciones Diferenciales', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
-        { id: 5, ramo: 'Ecuaciones Diferenciales', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
-        { id: 6, ramo: 'Ecuaciones Diferenciales', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
+        { id: 2, ramo: 'Cálculo III', enunciado: <img src={C32E} alt="C3 2E" />, solucion: <img src={C32S} alt="C3 2S" />, temario: 'Integral de línea' },
+        { id: 3, ramo: 'Cálculo III', enunciado: <img src={C33E} alt="C3 3E" />, solucion: <img src={C33S} alt="C3 3S" />, temario: 'Superficies de revolución' },
+        { id: 4, ramo: 'Ecuaciones Diferenciales', enunciado: <img src={EDO1E} alt="EDO 1E" />, solucion: <img src={EDO1S} alt="EDO 1S" />, temario: 'PVI de primer orden' },
+        { id: 5, ramo: 'Ecuaciones Diferenciales', enunciado: <img src={EDO2E} alt="EDO 2E" />, solucion: <img src={EDO2S} alt="EDO 2S" />, temario: 'EDO homogenea de segundo orden' },
+        { id: 6, ramo: 'Ecuaciones Diferenciales', enunciado: <img src={EDO3E} alt="EDO 3E" />, solucion: <img src={EDO3S} alt="EDO 3S" />, temario: 'EDO no homogenea de segundo orden' },
         { id: 7, ramo: 'Termodinámica', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
         { id: 8, ramo: 'Termodinámica', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
         { id: 9, ramo: 'Termodinámica', enunciado: 'Enunciado', solucion: 'Solución', temario: 'Temario' },
@@ -64,12 +74,12 @@ function Ejercicios() {
                 <button onClick={() => { setFiltro("Cálculo III") }}
                     className='boton-desactivado'
                 >Cálculo III</button>
-                <button onClick={() => { setFiltro("Termodinámica") }}
-                    className='boton-desactivado'
-                >Termodinámica</button>
                 <button onClick={() => { setFiltro("Ecuaciones Diferenciales") }}
                     className='boton-desactivado'
                 >Ecuaciones Diferenciales</button>
+                <button onClick={() => { setFiltro("Termodinámica") }}
+                    className='boton-desactivado'
+                >Termodinámica</button>
             </div>
 
             {ejerciciosfiltrados.map((ej) => (
