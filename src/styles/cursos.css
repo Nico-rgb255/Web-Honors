@@ -84,3 +84,16 @@
     transform: translateY(-4px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
+/*ESTILOS de cuando se abren los cursos*/
+.texto-largo {
+    color: var(--text-primary);
+    background-color: var(--bg-color);
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.texto-largo li {
+    color: var(--text-secondary);
+}
