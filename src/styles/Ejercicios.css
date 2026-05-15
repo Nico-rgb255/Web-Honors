@@ -1,0 +1,21 @@
+.ej {
+    transition: 0.3s;
+}
+
+
+/*Modo Claro*/
+
+.cej {
+    background-color: whitesmoke;
+    color: #000000;
+    transition: 0.3s;
+}
+
+
+/*MODO OSCURO*/
+
+.oej {
+    background-color: #202940;
+    color: #ffffff;
+    transition: 0.3s;
+}
