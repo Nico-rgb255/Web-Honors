@@ -13,7 +13,7 @@ function Cursos() {
     const [cursoSeleccionado, setCursoSeleccionado] = useState(null);
 
     const misCursos = [
-        { id: 1, nombre: "Dinamica", desc: "¿De que trata la fisica?", contenido: textoFisicaLong },
+        { id: 1, nombre: "Termodinámica", desc: "¿De que trata la fisica?", contenido: textoFisicaLong },
         { id: 2, nombre: "Cálculo III", desc: "Integrales derivadas y más", contenido: textoCalculoLong },
         { id: 3, nombre: "Ecuaciones diferenciales", desc: "Como crece una poblacion como cambian las cosas", contenido: textoEcuacionesdiferenciales }
     ];
@@ -33,25 +33,24 @@ if (cursoSeleccionado) {
                     <strong>Descripción:</strong> {cursoSeleccionado.desc}
                 </p>
                 
-                {/* PASO CLAVE: Aquí le pones la clase nueva */}
+                {/* El dangerous es para que pase el html y lo exporte bien si no no funciona */}
                 <div 
                     className="texto-largo" 
                     dangerouslySetInnerHTML={{ __html: cursoSeleccionado.contenido }} 
                 />
                 
                 <hr />
-                <button onClick={() => setCursoSeleccionado(null)}>Volver a la lista</button>
+                <button className="btn-tarjeta" onClick={() => setCursoSeleccionado(null)}>Volver a la lista</button>
             </div>
         </div>
     );
 }
 
 return (
+    /* Esto es para el modo oscuro*/
     <div className={actual_state ? "oej" : "cej"}>
         <Header update={setActivado} state={actual_state}/>
-        
-        {/*// Esto es para el modo oscuro*/}
-        
+        {/*Aqui se muestra todo*/}
         <h1 className="titulo-moderado" style={{ paddingTop: '20px' }}>
             Mis Cursos
         </h1>

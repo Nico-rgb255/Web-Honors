@@ -1,3 +1,4 @@
+//Aqui creamos el componente de los cursos es como un objeto asi creamos las cosas de forma simple y no hay que inventarlo cada vez
 import React from 'react';
 
 function CardCurso({ nombre, descripcion, alClick }) {
