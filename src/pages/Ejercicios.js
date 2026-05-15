@@ -8,10 +8,20 @@ function Ejercicios() {
     // MODO OSCURO
     const [actual_state, setActivado] = useState(GetLocalStorage());
 
-    // BOTON DINAMICO
-    const [botonDinamico1, setbotonDinamico1] = useState(false);
-    // BOTON DINAMICO 2
-    const [botonDinamico2, setbotonDinamico2] = useState(false);
+    /*
+    
+    LOGICA ANTIGUA DEL BOTON
+    
+        // BOTON DINAMICO
+        const [botonDinamico1, setbotonDinamico1] = useState(false);
+        // BOTON DINAMICO 2
+        const [botonDinamico2, setbotonDinamico2] = useState(false);
+        // BOTON DINAMICO 3
+        const [botonDinamico3, setbotonDinamico3] = useState(false);
+        // BOTON DINAMICO 4
+        const [botonDinamico4, setbotonDinamico4] = useState(false);
+    
+    */
 
     // LISTA EJERCICIOS
     const lista_ejercicios = [
@@ -38,13 +48,18 @@ function Ejercicios() {
 
             <div style={boton_contenedor}>
                 <button
-                    onClick={() => { setFiltro("No-filtro"); setbotonDinamico1(!botonDinamico1); }}
-                    className={botonDinamico1 ? 'boton-activado' : 'boton-desactivado'}
+                    onClick={() => { setFiltro("No-filtro") }}
+                    className='boton-desactivado'
                 >No Filtrar</button>
-                <button onClick={() => { setFiltro("Cálculo III"); setbotonDinamico2(!botonDinamico2); }}
+                <button onClick={() => { setFiltro("Cálculo III") }}
+                    className='boton-desactivado'
                 >Cálculo III</button>
-                <button onClick={() => setFiltro("Termodinámica")}>Termodinámica</button>
-                <button onClick={() => setFiltro("Ecuaciones Diferenciales")}>Ecuaciones Diferenciales</button>
+                <button onClick={() => { setFiltro("Termodinámica") }}
+                    className='boton-desactivado'
+                >Termodinámica</button>
+                <button onClick={() => { setFiltro("Ecuaciones Diferenciales") }}
+                    className='boton-desactivado'
+                >Ecuaciones Diferenciales</button>
             </div>
 
             {ejerciciosfiltrados.map((ej) => (
