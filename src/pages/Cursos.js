@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import GetLocalStorage from "../LocalStorage/Get";
 import { useState } from "react";
 import CardCurso from "../components/CardCurso"; // <-- IMPORTANTE IMPORTANTE IMPORTAR EL COMPONENTE PARA USARLO
-import { textoFisicaLong, textoCalculoLong, textoProgramacionIntro } from "./textosCursos";
+import { textoFisicaLong, textoCalculoLong, textoEcuacionesdiferenciales } from "./textosCursos";
 import '../styles/cursos.css'
 
 
@@ -13,9 +13,9 @@ function Cursos() {
     const [cursoSeleccionado, setCursoSeleccionado] = useState(null);
 
     const misCursos = [
-        { id: 1, nombre: "Física II", desc: "Ondas y Calor", contenido: textoFisicaLong },
-        { id: 2, nombre: "Cálculo III", desc: "Integrales", contenido: textoCalculoLong },
-        { id: 3, nombre: "Programación", desc: "Python", contenido: textoProgramacionIntro }
+        { id: 1, nombre: "Dinamica", desc: "¿De que trata la fisica?", contenido: textoFisicaLong },
+        { id: 2, nombre: "Cálculo III", desc: "Integrales derivadas y más", contenido: textoCalculoLong },
+        { id: 3, nombre: "Ecuaciones diferenciales", desc: "Python para todos", contenido: textoEcuacionesdiferenciales }
     ];
 
     // SI HAY ALGO SELECCIONADO, MOSTRAR EL DETALLE GENÉRICO
