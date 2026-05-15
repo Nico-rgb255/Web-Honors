@@ -3,6 +3,9 @@ import Header from "../components/Header";
 import GetLocalStorage from "../LocalStorage/Get";
 import { useState } from "react";
 import CardCurso from "../components/CardCurso"; // <-- IMPORTANTE IMPORTANTE IMPORTAR EL COMPONENTE PARA USARLO
+import { textoFisicaLong, textoCalculoLong, textoProgramacionIntro } from "./textosCursos";
+import '../styles/cursos.css'
+
 
 function Cursos() {
     const [actual_state, setActivado] = useState(true);
@@ -10,9 +13,9 @@ function Cursos() {
     const [cursoSeleccionado, setCursoSeleccionado] = useState(null);
 
     const misCursos = [
-        { id: 1, nombre: "Física II", desc: "Ondas y Calor", contenido: "Guía 1: Termodinámica..." },
-        { id: 2, nombre: "Cálculo III", desc: "Integrales", contenido: "Teorema de Green y Stokes..." },
-        { id: 3, nombre: "Programación", desc: "Python", contenido: "Listas y Diccionarios..." }
+        { id: 1, nombre: "Física II", desc: "Ondas y Calor", contenido: textoFisicaLong },
+        { id: 2, nombre: "Cálculo III", desc: "Integrales", contenido: textoCalculoLong },
+        { id: 3, nombre: "Programación", desc: "Python", contenido: textoProgramacionIntro }
     ];
 
     // SI HAY ALGO SELECCIONADO, MOSTRAR EL DETALLE GENÉRICO
@@ -20,15 +23,20 @@ function Cursos() {
         return (
             <>
                 <Header update={setActivado} state={actual_state}/>
-                <div className="detalle-curso">
-                    <h1>{cursoSeleccionado.nombre}</h1> {/* Se llena solo */}
-                    <p><strong>Descripción:</strong> {cursoSeleccionado.desc}</p>
-                    <div className="contenido">
-                        {cursoSeleccionado.contenido}
-                    </div>
-                    <hr />
-                    <button onClick={() => setCursoSeleccionado(null)}>Volver a la lista</button>
-                </div>
+    <div className="detalle-curso">
+        <h1 className="titulo-moderado">{cursoSeleccionado.nombre}</h1> 
+        <p className="texto-normal"><strong>Descripción:</strong> {cursoSeleccionado.desc}</p>
+    
+        {/* CORRECTO: La propiedad va pegada al div, no entre llaves de contenido */}
+        <div 
+            className="contenido texto-normal" 
+            // Esto es para que la wea sepa que el texto de textos cursos es html
+            dangerouslySetInnerHTML={{ __html: cursoSeleccionado.contenido }} 
+        />
+    
+    <hr />
+    <button onClick={() => setCursoSeleccionado(null)}>Volver a la lista</button>
+</div>
             </>
         );
     }
