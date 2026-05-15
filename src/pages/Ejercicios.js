@@ -5,7 +5,13 @@ import { useState } from "react";
 import '../styles/Ejercicios.css'
 
 function Ejercicios() {
+    // MODO OSCURO
     const [actual_state, setActivado] = useState(GetLocalStorage());
+
+    // BOTON DINAMICO
+    const [botonDinamico1, setbotonDinamico1] = useState(false);
+    // BOTON DINAMICO 2
+    const [botonDinamico2, setbotonDinamico2] = useState(false);
 
     // LISTA EJERCICIOS
     const lista_ejercicios = [
@@ -30,9 +36,13 @@ function Ejercicios() {
                 <h1>Ejercicios</h1>
             </div>
 
-            <div style={boton}>
-                <button onClick={() => setFiltro("No-filtro")}>No Filtrar</button>
-                <button onClick={() => setFiltro("Cálculo III")}>Cálculo III</button>
+            <div style={boton_contenedor}>
+                <button
+                    onClick={() => { setFiltro("No-filtro"); setbotonDinamico1(!botonDinamico1); }}
+                    className={botonDinamico1 ? 'boton-activado' : 'boton-desactivado'}
+                >No Filtrar</button>
+                <button onClick={() => { setFiltro("Cálculo III"); setbotonDinamico2(!botonDinamico2); }}
+                >Cálculo III</button>
                 <button onClick={() => setFiltro("Termodinámica")}>Termodinámica</button>
                 <button onClick={() => setFiltro("Ecuaciones Diferenciales")}>Ecuaciones Diferenciales</button>
             </div>
@@ -80,11 +90,11 @@ const temario = {
     margin: '10px'
 }
 
-const boton = {
+const boton_contenedor = {
     display: 'flex',
     gap: '10px',
     marginBottom: '20px',
-    justifyContent: 'center'
-};
+    justifyContent: 'center',
+}
 
 export default Ejercicios;

@@ -1,5 +1,6 @@
 .ej {
     transition: 0.3s;
+    min-height: 100vh;
 }
 
 
@@ -9,6 +10,7 @@
     background-color: whitesmoke;
     color: #000000;
     transition: 0.3s;
+    min-height: 100vh;
 }
 
 
@@ -18,4 +20,26 @@
     background-color: #202940;
     color: #ffffff;
     transition: 0.3s;
+    min-height: 100vh;
+}
+
+.boton-activado {
+  background-color: #1919e6;
+  color: white;
+  height: 25px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton-desactivado {
+  height: 25px;
+  width: 100px;
+  background-color: #feffe0;
+  border: solid 1px;
+  border-radius: 5px;
+  color: #282c34;
+  transition: 0.3s;
+  cursor: pointer;
 }
