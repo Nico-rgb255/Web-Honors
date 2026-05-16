@@ -39,9 +39,28 @@ function Home(props){
                 </div>
             </div>
         </div>
-
+        <div style={curso_disponible_contenedor}>
+            <p>Cursos disponibles:</p>
+            <p style={curso_disponible}>Cálculo III</p>
+            <p style={curso_disponible}>Ecuaciones Diferenciales</p>
+            <p style={curso_disponible}>Termodinámica</p>
+        </div>
     </div>
     );
+}
+
+const curso_disponible_contenedor = {
+    display: 'flex',
+    gap: '10px',
+    marginBottom: '20px',
+    justifyContent: 'center',
+}
+const curso_disponible = {
+    padding: '5px',
+    borderRadius: '10px',
+    gap: '10px',
+    border: '2px solid',
+    margin: '10px'
 }
 
 export default Home;

@@ -1,34 +1,39 @@
-.home{
+.home {
     height: 700px;
     transition: 0.3s;
 }
 
-.bannercss{
+.bannercss {
     background-color: antiquewhite;
 }
 
-#banner{
+#banner {
     display: flex;
     flex-direction: row;
     height: 500px;
     padding: 10px;
     transition: 0.5s;
-    
+
 }
 
+<<<<<<< HEAD
 #Welcome{
+=======
+#Welcome {
+    border: seagreen solid 3px;
+>>>>>>> 57828385d17746a530d14cc042189ab829587eed
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#panel_sesion{
+#panel_sesion {
     border: royalblue solid 3px;
     width: 50%;
 }
 
-#WBox{
+#WBox {
     width: 70%;
     border-radius: 15px;
     color: rgba(255, 255, 255, 0.893);
@@ -37,39 +42,38 @@
 
 /*Modo Claro*/
 
-.chome{
+.chome {
     background-color: whitesmoke;
 }
 
-.cbannercss{
-    background: linear-gradient(
-  135deg,
-  #001a7a 0.000%,
-  #001a7a 14.286%,
-  #1236a8 calc(14.286% + 1px),
-  #1236a8 28.571%,
-  #2d57d1 calc(28.571% + 1px),
-  #2d57d1 42.857%,
-  #4f7ef0 calc(42.857% + 1px),
-  #4f7ef0 57.143%,
-  #79a6ff calc(57.143% + 1px),
-  #79a6ff 71.429%,
-  #b3d0ff calc(71.429% + 1px),
-  #b3d0ff 85.714%,
-  #eef5ff calc(85.714% + 1px),
-  #ffffff 100.000%
-);
+.cbannercss {
+    background: linear-gradient(135deg,
+            #001a7a 0.000%,
+            #001a7a 14.286%,
+            #1236a8 calc(14.286% + 1px),
+            #1236a8 28.571%,
+            #2d57d1 calc(28.571% + 1px),
+            #2d57d1 42.857%,
+            #4f7ef0 calc(42.857% + 1px),
+            #4f7ef0 57.143%,
+            #79a6ff calc(57.143% + 1px),
+            #79a6ff 71.429%,
+            #b3d0ff calc(71.429% + 1px),
+            #b3d0ff 85.714%,
+            #eef5ff calc(85.714% + 1px),
+            #ffffff 100.000%);
     box-shadow: 0px 5px 10px #585f73;
     transition: 0.5s;
 }
 
 /*MODO OSCURO*/
 
-.ohome{
+.ohome {
     background-color: #202940;
+    color: #ffffff;
 }
 
-.obannercss{
+.obannercss {
     /*background: #1B004B;
     background: linear-gradient(67deg,rgba(27, 0, 75, 1) 0%, rgba(161, 48, 184, 1) 42%, rgba(127, 0, 178, 1) 77%, rgba(76, 0, 125, 1) 100%);
     */
