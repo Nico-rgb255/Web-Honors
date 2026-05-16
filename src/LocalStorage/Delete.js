@@ -1,5 +1,5 @@
-function DeleteLocalStorage(){
-    localStorage.removeItem("actual_state");
+function DeleteLocalStorage(variable){
+    localStorage.removeItem(variable);
 }
 
 export default DeleteLocalStorage;

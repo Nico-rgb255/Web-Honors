@@ -7,8 +7,8 @@ import { textoFisicaLong, textoCalculoLong, textoEcuacionesdiferenciales } from 
 import '../styles/cursos.css'
 
 
-function Cursos() {
-    const [actual_state, setActivado] = useState(GetLocalStorage());
+function Cursos(props) {
+    const [actual_state, setActivado] = useState(GetLocalStorage("actual_state"));
     // Ahora el estado guarda el OBJETO del curso, no solo el nombre
     const [cursoSeleccionado, setCursoSeleccionado] = useState(null);
 
@@ -22,7 +22,7 @@ function Cursos() {
 if (cursoSeleccionado) {
     return (
         <div className={actual_state ? "oej" : "cej"}>
-            <Header update={setActivado} state={actual_state}/>
+            <Header setUser={props.setUser} update={setActivado} state={actual_state}/>
             
             <div className="detalle-curso">
                 <h1 className="titulo-moderado" style={{ paddingTop: '20px' }}>
@@ -49,7 +49,7 @@ if (cursoSeleccionado) {
 return (
     /* Esto es para el modo oscuro*/
     <div className={actual_state ? "oej" : "cej"}>
-        <Header update={setActivado} state={actual_state}/>
+        <Header setUser={props.setUser} update={setActivado} state={actual_state}/>
         {/*Aqui se muestra todo*/}
         <h1 className="titulo-moderado" style={{ paddingTop: '20px' }}>
             Mis Cursos

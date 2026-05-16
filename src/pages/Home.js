@@ -5,8 +5,8 @@ import { useState } from "react";
 import '../styles/Home.css'
 import '../styles/Efects.css'
 
-function Home(){
-    const [actual_state, setActivado] =useState(GetLocalStorage());
+function Home(props){
+    const [actual_state, setActivado] =useState(GetLocalStorage("actual_state"));
 
     //Esto crea una varible 'dinamica' en memoria.
     //useState es una función con valor inicial que devuelve una variable y una función respectivamente en forma de par
@@ -18,7 +18,7 @@ function Home(){
     <div  className={actual_state ? "ohome home" : "chome home"}>
         {/*Header*/}
         <div>
-            <Header update = {setActivado} state = {actual_state}/>
+            <Header setUser= {props.setUser} update = {setActivado} state = {actual_state}/>
         </div>
 
         {/*Banner*/}
@@ -31,10 +31,11 @@ function Home(){
                 
                 
             </div>
-            <div id="panel_sesion">
-                <div id="sesion_box" className="glass">
-                    <h2>Iniciar sesión</h2>
-                    <p>Inicia sesión acá</p>
+            <div id="Welcome">
+                <div id="WBox" className="glass">
+                    <h1>Muchos cursos disponibles</h1>
+                    <p>Tenemos una gran variedad de cursos. Te invitamos a visitar las distintas paginas disponibles en la barra de navegación</p>
+                        
                 </div>
             </div>
         </div>

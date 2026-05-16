@@ -4,6 +4,7 @@ import '../styles/Header.css' //el '..' pide que subamos de nivel de carpeta par
 import logo from '../imagenes/Logo.avif'
 import PostLocalStorage from "../LocalStorage/Post";
 import GetLocalStorage from "../LocalStorage/Get";
+import DeleteLocalStorage from "../LocalStorage/Delete";
 
 function Header(props){ //nota... llamar a setActivado llama de nuevo a la función header pero modificada. Puede generar bucles infinitos...
 
@@ -17,8 +18,13 @@ function Header(props){ //nota... llamar a setActivado llama de nuevo a la funci
 
     async function modo(){
         const newactivado = !activado; //Actualizamos el valor.
-        PostLocalStorage(newactivado); //guardamos primero el nuevo valor
+        PostLocalStorage("actual_state", newactivado); //guardamos primero el nuevo valor
         setActivado(newactivado); //Cambia la variable activado a su opuesto y actualiza la pagina con el nuevo valor actualizado
+    }
+
+    async function cerrar_sesión() {
+        DeleteLocalStorage("actual_state");
+        props.setUser(null)
     }
 
     return(
@@ -29,7 +35,7 @@ function Header(props){ //nota... llamar a setActivado llama de nuevo a la funci
                     <li className="element"><a className={activado ? "olink" : "clink"} href="/">Inicio</a></li> {/* La etiqueta a hace referencia a un "ancla" y es la forma en la que se crean hiperinculos en la web.*/}
                     <li className="element"><a className={activado ? "olink" : "clink"} href="/cursos">Cursos</a></li> {/*href significa Hypertext Reference*/}
                     <li className="element"><a className={activado ? "olink" : "clink"} href="/ejercicios">Ejercicios</a></li> {/*el '#' te lleva a la etiqueta que contenga dicho id dentro de la pagina. Sin '#' busca en el internet.*/}
-                    <li className="element"><a className={activado ? "olink" : "clink"} href="/cuenta">Cuenta</a></li>
+                    <li><button className={activado ? "btn-dinamico" : "btn-activo"} onClick={cerrar_sesión}> Cerrar sesión </button></li>
                     <li><button className={activado ? "btn-dinamico" : "btn-activo"} onClick={modo}> {activado ? "Modo claro" : "Modo oscuro"} </button></li> {/*Boton con condicional de linea.*/}
                 </ul>
             </header>
